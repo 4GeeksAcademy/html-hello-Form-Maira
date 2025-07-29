@@ -1,0 +1,35 @@
+.container {
+    justify-content:center;
+    align-items:center;
+    border:rgb(189, 180, 180) 1px solid;
+    border-radius: 3px;
+
+}
+
+legend {
+    background:rgb(219, 214, 214);
+}
+
+label {
+    font-weight:bold;
+}
+
+.howMuch{
+    display: flex;
+}
+
+.form-label-sub{
+    font-size:small;
+    font-weight:lighter;
+}
+
+.cards {
+    background: rgb(180, 175, 175);
+    width:200px;
+    padding:5px;
+    border-radius:2px;
+}
+
+.btn btn-secondary, .btn btn-primary{
+    justify-content:space-around;
+}
