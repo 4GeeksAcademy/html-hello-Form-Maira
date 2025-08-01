@@ -23,73 +23,66 @@
             <div class="alert alert-danger" role="alert">
                 Some fields are missing
             </div>
-            <div class="row mb-4">
-                <div class="col-5" class="col width-100">
+            <div class="row row-cols-3 mb-4">
+                <div class="col-lg-5 col-md-8 col-sm-12 col-12" class="col width-100">
                     <label for="card" class="form-label">Card #</label>
                     <br />
-                    <input type="number" name="Card" class="form-control" size="16" value="" placeholder="XXXXXXXXXXXXXXXX" />
+                    <input type="number" name="Card" class="form-control" size="16" value="" placeholder="XXXXXXXXXXXXXXXX" required/>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <label for="CVC" class="form-label">CVC #</label>
                     <br />
-                    <input type="number" name="CVC" class="form-control" size="4" value="" placeholder="0000" />
+                    <input type="number" name="CVC" class="form-control" size="4" value="" placeholder="0000" required/>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-5 col-sm-6 col-6">
                     <label for="Amount" class="form-label">Amount</label>
                     <br />
                     <div class="howMuch">
                         <label for="Money" class="form-label">$</label>
-                        <input type="number" name="Amount" class="form-control" size="4" value="" placeholder="Amount" />
+                        <input type="number" name="Amount" class="form-control" size="4" value="" placeholder="Amount" required/>
                     </div>    
                 </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col">
+                <div class="col-lg-6 col-md-8 col-sm-12 col-12">
                     <label for="firstName" class="form-label">First Name</label>
                     <br />
-                    <input type="text" name="firstName" class="form-control" value="" />
+                    <input type="text" name="firstName" class="form-control" value="" required/>
                 </div>
-                <div class="col">
+                <div class="col-lg-6 col-md-8 col-sm-12 col-12">
                     <label for="lastName" class="form-label">Last Name</label>
                     <br />
-                    <input type="text" name="lastName" class="form-control" value="" />
+                    <input type="text" name="lastName" class="form-control" value="" required/>
                 </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-8 col-sm-12 col-12">
                     <label for="city" class="form-label">City</label>
                     <br />
-                    <input type="text" name="city" class="form-control" value="" />
+                    <input type="text" name="city" class="form-control" value="" required/>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-5 col-sm-6 col-6">
                     <label for="state" class="form-label">State</label>
                     <br />
-                    <select name="state" class="form-control">
+                    <select name="state" class="form-control" required>
                         <option value="A">A</option>
                         <option value="B">B</option>
                         <option value="C">C</option>
                         <option value="D">D</option>
                     </select>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-5 col-sm-6 col-6">
                     <label for="postalCode" class="form-label">Postal Code</label>
                     <br />
-                    <input type="number" name="postalCode" class="form-control" value="" />
+                    <input type="number" name="postalCode" class="form-control" value="" required/>
                 </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col">
+                <div class="col-lg-6 col-md-8 col-sm-12 col-12">
                     <label for="typeOfCard" class="form-label">We accept:</label>
                     <br />
                     <div class="cards">
-                        <input type="radio" name="typeOfCard" value="mastercard" /> <i
-                            class="fa-brands fa-cc-mastercard"></i>
-                        <input type="radio" name="typeOfCard" value="visa" /> <i class="fa-brands fa-cc-visa"></i>
-                        <input type="radio" name="typeOfCard" value="payPal" /> <i class="fa-brands fa-cc-paypal"></i>
-                        <input type="radio" name="typeOfCard" value="otra" /> <i class="fa-regular fa-credit-card"></i>
+                        <input type="radio" name="typeOfCard" value="mastercard" required/> <i class="fa-brands fa-cc-mastercard"></i>
+                        <input type="radio" name="typeOfCard" value="visa" required/> <i class="fa-brands fa-cc-visa"></i>
+                        <input type="radio" name="typeOfCard" value="payPal" required/> <i class="fa-brands fa-cc-paypal"></i>
+                        <input type="radio" name="typeOfCard" value="otra" required/> <i class="fa-regular fa-credit-card"></i>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-6 col-md-8 col-sm-12 col-12">
                     <label for="message" class="form-label">Message</label>
                     <br />
                     <textarea class="form-control"></textarea>
@@ -99,7 +92,7 @@
             <hr/>
             <div class="foot d-md-flex justify-content-md-end">
                     <button type="button" class="btn btn-secondary ms-1 me-2">Cancel</button>
-                    <button type="button" class="btn btn-primary ms-1 me-2">Send</button>
+                    <button type="submit" class="btn btn-primary ms-1 me-2">Send</button>
             </div>
             <br/>
         </div>
